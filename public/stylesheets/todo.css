@@ -1,0 +1,346 @@
+        /* Basic styling for the app */ 
+     
+        
+        
+/* Define styles for high, medium, and low priority tasks */
+.high-priority:hover {
+    background-color: red;
+}
+
+.medium-priority:hover {
+    background-color: yellow;
+}
+
+.low-priority:hover {
+    background-color: lightgreen;
+}
+
+
+        body::after {
+            content: "";
+            background: url(Designer\ \(2\).png);
+            opacity: 0.7;
+           
+        }
+        
+        
+        
+          
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(77, 0, 128);
+            background-image: url(Designer\ \(2\).png);
+            position: relative;
+            background-repeat:initial;
+                    
+            
+        
+        }
+                .completed {
+                    text-decoration: line-through;
+                  
+                }
+                .container {
+                    max-width:fit-content;
+                    margin: 0 auto;
+                    padding: 20px;
+                    border-radius: 5px;
+                    background-color: gray;
+                     /* background-image: url(Designer.png); 
+                    position: relative; */
+                    
+
+                }
+              
+
+                /* Style the "Add Task" button */
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+        .date,.select,.task{
+           
+            padding: 8px 12px;
+        }
+        .btn
+        {
+            background-color: green;
+            color: #060606;
+            border: none;
+            font-family: Arial, sans-serif;
+            padding: 8px 12px;
+            cursor: pointer;   
+        }
+        #taskInput,#dateInput,#priorityInput {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+          }
+         
+          #taskList {
+
+            border-bottom: 1px solid #ddd;
+            display: block;
+         
+          }
+          #taskList li {
+            border-bottom: 1px solid #ddd;;
+            padding: top 4px;;
+          }
+
+
+          .delete-btn {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+          }
+          .due-date {
+            margin-left: 10px;
+          }
+
+
+/* User information section styling */
+.user-info{
+    background-color: #1f1f1fb0; /* Semi-transparent dark background */
+    color:#fff; /* White text color */
+    height: 10vh; /* Sets the height to 10% of the viewport height */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:100px; /* Space between elements */
+    overflow: hidden;
+    background-color: #333;
+     /* Set the navbar to fixed position */
+    width: 100%; /* Full width */
+}
+
+/* Button styling within the user-info section */
+.user-info button{
+    padding:12px;
+    border:none;
+    background-color:#fff; /* White background for buttons */
+    color: #000; /* Black text color */
+    font-size: 15px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Button hover effect */
+.user-info button:hover{
+    cursor: pointer;
+    background-color:#042743; /* Background color changes on hover */
+    color: #fff; /* Text color changes on hover */
+}
+
+/* Styling for span elements within user-info */
+.user-info span{
+    font-weight: 900; /* Bold text */
+}
+
+.footer{
+
+    background-color: #13083e;
+    display: flex;
+    margin-top: 56px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 991px) {
+    .footer {
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+  }
+
+  .footer-content {
+    display: flex;
+    width: 100%;
+    max-width: 1258px;
+    gap: 20px;
+  }
+
+  @media (max-width: 991px) {
+    .footer-content {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  .footer-left {
+    flex-grow: 1;
+    flex-basis: auto;
+  }
+
+  @media (max-width: 991px) {
+    .footer-left {
+      max-width: 100%;
+    }
+  }
+
+  .footer-columns {
+    gap: 20px;
+    display: flex;
+  }
+
+  @media (max-width: 991px) {
+    .footer-columns {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+
+  .footer-logo-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 67%;
+    margin-left: 0px;
+  }
+
+  @media (max-width: 991px) {
+    .footer-logo-column {
+      width: 100%;
+    }
+  }
+
+  .footer-logo {
+    display: flex;
+    gap: 12px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 167%;
+    padding: 0 10px 2px;
+  }
+
+  @media (max-width: 991px) {
+    .footer-logo {
+      margin-top: 35px;
+      white-space: initial;
+    }
+  }
+
+  .footer-logo-image {
+    aspect-ratio: 1.11;
+    object-fit: auto;
+    object-position: center;
+    width: 49px;
+  }
+
+  .footer-logo-text {
+    font-family: Inter, sans-serif;
+    margin: auto 0;
+  }
+
+  .footer-team-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 991px) {
+    .footer-team-column {
+      width: 100%;
+    }
+  }
+
+  .footer-team {
+    display: flex;
+    margin-top: 16px;
+    flex-grow: 1;
+    flex-direction: column;
+    color: #fff;
+  }
+
+  @media (max-width: 991px) {
+    .footer-team {
+      margin-top: 40px;
+    }
+  }
+
+  .footer-team-title {
+    font: 600 30px/133% Inter, sans-serif;
+  }
+
+  .footer-team-members {
+    margin-top: 24px;
+    font: 500 20px/40px Inter, sans-serif;
+  }
+
+  .footer-contact {
+    align-items: center;
+    align-self: start;
+    display: flex;
+    gap: 19px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    text-align: right;
+    letter-spacing: -0.1px;
+    line-height: 120%;
+  }
+
+  @media (max-width: 991px) {
+    .footer-contact {
+      white-space: initial;
+    }
+  }
+
+  .footer-contact-text {
+    font-family: Inter, sans-serif;
+    align-self: stretch;
+    flex-grow: 1;
+    margin: auto 0;
+  }
+
+  .footer-contact-icon-1 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 30px;
+    align-self: stretch;
+  }
+
+  .footer-contact-icon-2 {
+    aspect-ratio: 1.3;
+    object-fit: auto;
+    object-position: center;
+    width: 30px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+
+  .footer-contact-icon-3 {
+    aspect-ratio: 1.33;
+    object-fit: auto;
+    object-position: center;
+    width: 32px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+
+  .footer-copyright {
+    color: #fff;
+    text-align: center;
+    letter-spacing: -0.1px;
+    margin-top: 58px;
+    font: 400 16px/150% Inter, sans-serif;
+  }
+
+@media (max-width: 991px) 
+{
+  .footer-copyright {
+      margin-top: 40px;
+    }
+}

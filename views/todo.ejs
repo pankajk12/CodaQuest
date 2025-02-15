@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/todo.css">
+    <script src="/javascripts/todo.js"></script>
+
+</head>
+<body  >
+    <div class="user-info" id="header">
+  
+
+  
+        <!-- Home Button -->
+        <button id="home" onclick="goBack()">Dashboard</button>
+        <!-- Welcome Message --> 
+    
+       
+        <span>Welcome, <span id="username"><%=name %></span></span>
+        <!-- Logout Button -->
+        <a href="/login"><button id="logout-button">Logout</button></a> 
+    
+    </div>
+    <div class="container">
+   <center><h2><strong> <u>My To-Do List</u></strong> </h2></center> 
+    <input class="task"  type="text" id="taskInput" placeholder="Add New task...">
+    <input  class="date"  type="date" id="dateInput">
+    <select class="select" id="priorityInput">
+        <option class="high" value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+    </select>
+    <button onclick="newTask()">Add Task</button>
+    <ol  value="Task" id="taskList">
+    </ol>
+
+    <button  class="btn" onclick="exportTasks()">Export</button>
+      </div>
+     
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="footer-columns">
+              <div class="footer-logo-column">
+                <div class="footer-logo">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4d729c8e0c1785724159638c137b6266652cd598fea5f4e9a7f67d81c84b02c3?apiKey=e2ef05dc6d124ad49ab3c7773b98619b&" alt="CodaQuest logo" class="footer-logo-image" />
+                  <div class="footer-logo-text">CodaQuest</div>
+                </div>
+              </div>
+              <div class="footer-team-column">
+                <div class="footer-team">
+                  <h2 class="footer-team-title">Team</h2>
+                  <p class="footer-team-members">
+                    Shubham Singh<br/>
+                    Pankaj Kumar
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <div class="footer-contact-text">Contact:</div>
+            <a href="#"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9ab8e6a8370f085ecdfb8e1ed8387eb297a7d56dddd882d67cf0e598ee18aed1?apiKey=e2ef05dc6d124ad49ab3c7773b98619b&" alt="Facebook icon" class="footer-contact-icon-1" /></a>
+            <a href="#"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/09fd166b8521dc51496fed5c09f17ec4b803608fd2d70e0b8db8dbafaa849daa?apiKey=e2ef05dc6d124ad49ab3c7773b98619b&" alt="Twitter icon" class="footer-contact-icon-2" /></a>
+            <a href="#"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1d24504d29e0ec772a0c84c2a0061de38a4f789a89d8aaab1fa6fde06d7f3ab8?apiKey=e2ef05dc6d124ad49ab3c7773b98619b&" alt="Instagram icon" class="footer-contact-icon-3" /></a>
+          </div>
+        </div>
+        <div class="footer-copyright">© 2024 CodaQuest. All Rights Reserved.</div>
+      </footer>
+</body>
+</html>

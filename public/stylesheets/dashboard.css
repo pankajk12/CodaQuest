@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global styles */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif; /* Sets the default font */
+    
+}
+
+/* Main tag styling */
+#main{
+    width:100%;
+    height:120vh;/* Sets the height to 130% of the viewport height */
+    background:#042743; /* Dark blue background color */
+    margin-top: 73px;
+}
+
+
+
+/* User information section styling */
+.user-info{
+    background-color: #1f1f1fb0; /* Semi-transparent dark background */
+    color:#fff; /* White text color */
+    height: 10vh; /* Sets the height to 10% of the viewport height */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:100px; /* Space between elements */
+    overflow:hidden;
+    background-color: #393232da;
+    position: fixed; /* Set the navbar to fixed position */
+    width: 100%; /* Full width */
+    top: 0;
+}
+
+/* Button styling within the user-info section */
+.user-info button{
+    padding:12px;
+    border:none;
+    background-color:#fff; /* White background for buttons */
+    color: #000; /* Black text color */
+    font-size: 15px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Button hover effect */
+.user-info button:hover{
+    cursor: pointer;
+    background-color:#042743; /* Background color changes on hover */
+    color: #fff; /* Text color changes on hover */
+}
+
+/* Styling for span elements within user-info */
+.user-info span{
+    font-weight: 900; /* Bold text */
+}
+
+/* Profile section styling */
+#profile{
+    width:100%;
+    height: 50%; /* Sets the height to 50% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px; /* Space between elements */
+}
+
+/* To-do list card styling */
+.todolist{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Shadow effect */
+    margin-left: 30px;
+    height: 43vh; /* Sets the height to 43% of the viewport height */
+    width:23%; /* Width set to 23% of the parent element */
+    color:#fff; /* White text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px; /* Space between elements */
+    flex-direction: column;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 15px; /* Rounded corners */
+}
+
+/* To-do list hover effect */
+.todolist:hover {
+    transform: scale(1.05); /* Scales up the card on hover */
+}
+
+/* To-do list paragraph styling */
+.todolist>p{
+    text-align: center; /* Centers the text */
+}
+
+/* To-do list button styling */
+.todolist>button{
+    padding:12px;
+    border:none;
+    background-color:#fff; /* White background for buttons */
+    color: #000; /* Black text color */
+    font-size: 15px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* To-do list button hover effect */
+.todolist>button:hover{
+    cursor: pointer;
+    background-color:#000; /* Background color changes on hover */
+    color: #fff; /* Text color changes on hover */
+}
+
+/* Profile card styling */
+.profile-card{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Shadow effect */
+    height: 40vh; /* Sets the height to 40% of the viewport height */
+    width:30%; /* Width set to 30% of the parent element */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#fff; /* White text color */
+    padding: 1rem;
+    border-radius: 15px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Profile card hover effect */
+.profile-card:hover {
+    transform: scale(1.05); /* Scales up the card on hover */
+}
+
+/* Cards container styling */
+#cards{
+    height: 50vh; /* Sets the height to 50% of the viewport height */
+    width: 100%;
+    display:flex;
+    align-items: center;
+    color:#fff; /* White text color */
+    gap: 20px; /* Space between elements */
+    justify-content: center;
+}
+
+/* Individual card styling */
+.card{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Shadow effect */
+    width:20%; /* Width set to 20% of the parent element */
+    height: 30vh ; /* Sets the height to 30% of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px; /* Space between elements */
+    flex-direction: column;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Quiz card hover effect */
+.quiz-card{
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 15px; /* Rounded corners */
+}
+
+/* Quiz card hover effect */
+.quiz-card:hover {
+    transform: scale(1.05); /* Scales up the card on hover */
+}
+
+/* Card paragraph styling */
+.card>p{
+    text-align: center; /* Centers the text */
+}
+
+/* Card button styling */
+.card>button{
+    padding:12px;
+    border:none;
+    background-color:#fff; /* White background for buttons */
+    color: #000; /* Black text color */
+    font-size: 15px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Card button hover effect */
+.card>button:hover{
+    cursor: pointer;
+    background-color:#000; /* Background color changes on hover */
+    color: #fff; /* Text color changes on hover */
+}
+a{
+    text-decoration: none;
+}
+
+
+.footer{
+background-color: #13083e;
+display: flex;
+margin-top: 5px;
+width: 100%;
+flex-direction: column;
+align-items: center;
+}
+
+@media (max-width: 991px) {
+.footer {
+  max-width: 100%;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+}
+
+.footer-content {
+display: flex;
+width: 100%;
+max-width: 1258px;
+gap: 20px;
+}
+
+@media (max-width: 991px) {
+.footer-content {
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+}
+
+.footer-left {
+flex-grow: 1;
+flex-basis: auto;
+}
+
+@media (max-width: 991px) {
+.footer-left {
+  max-width: 100%;
+}
+}
+
+.footer-columns {
+gap: 20px;
+display: flex;
+}
+
+@media (max-width: 991px) {
+.footer-columns {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0px;
+}
+}
+
+.footer-logo-column {
+display: flex;
+flex-direction: column;
+line-height: normal;
+width: 67%;
+margin-left: 0px;
+}
+
+@media (max-width: 991px) {
+.footer-logo-column {
+  width: 100%;
+}
+}
+
+.footer-logo {
+display: flex;
+gap: 12px;
+font-size: 24px;
+color: #fff;
+font-weight: 600;
+line-height: 167%;
+padding: 0 10px 2px;
+}
+
+@media (max-width: 991px) {
+.footer-logo {
+  margin-top: 35px;
+  white-space: initial;
+}
+}
+
+.footer-logo-image {
+aspect-ratio: 1.11;
+object-fit: auto;
+object-position: center;
+width: 49px;
+}
+
+.footer-logo-text {
+font-family: Inter, sans-serif;
+margin: auto 0;
+}
+
+.footer-team-column {
+display: flex;
+flex-direction: column;
+line-height: normal;
+width: 33%;
+margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+.footer-team-column {
+  width: 100%;
+}
+}
+
+.footer-team {
+display: flex;
+margin-top: 16px;
+flex-grow: 1;
+flex-direction: column;
+color: #fff;
+}
+
+@media (max-width: 991px) {
+.footer-team {
+  margin-top: 40px;
+}
+}
+
+.footer-team-title {
+font: 600 30px/133% Inter, sans-serif;
+}
+
+.footer-team-members {
+margin-top: 24px;
+font: 500 20px/40px Inter, sans-serif;
+}
+
+.footer-contact {
+align-items: center;
+align-self: start;
+display: flex;
+gap: 19px;
+font-size: 25px;
+color: #fff;
+font-weight: 700;
+text-align: right;
+letter-spacing: -0.1px;
+line-height: 120%;
+}
+
+@media (max-width: 991px) {
+.footer-contact {
+  white-space: initial;
+}
+}
+
+.footer-contact-text {
+font-family: Inter, sans-serif;
+align-self: stretch;
+flex-grow: 1;
+margin: auto 0;
+}
+
+.footer-contact-icon-1 {
+aspect-ratio: 1;
+object-fit: auto;
+object-position: center;
+width: 30px;
+align-self: stretch;
+}
+
+.footer-contact-icon-2 {
+aspect-ratio: 1.3;
+object-fit: auto;
+object-position: center;
+width: 30px;
+align-self: stretch;
+margin: auto 0;
+}
+
+.footer-contact-icon-3 {
+aspect-ratio: 1.33;
+object-fit: auto;
+object-position: center;
+width: 32px;
+align-self: stretch;
+margin: auto 0;
+}
+
+.footer-copyright {
+color: #fff;
+text-align: center;
+letter-spacing: -0.1px;
+margin-top: 58px;
+font: 400 16px/150% Inter, sans-serif;
+}
+
+@media (max-width: 991px) 
+{
+.footer-copyright {
+  margin-top: 40px;
+}
+}
+
+
+
+@media (max-width: 768px) {
+    /* Adjust the main section for smaller screens */
+    #main {
+      height: auto; /* Make the height auto to accommodate content */
+      margin-top: 50px; /* Reduce the top margin */
+    }
+  
+    /* Stack user-info items vertically and center them */
+    .user-info {
+      flex-direction: column;
+      gap: 20px; /* Reduce the gap between items */
+    }
+  
+    /* Adjust profile section to stack items vertically */
+    #profile {
+      flex-direction: column;
+      height: auto; /* Make the height auto to accommodate stacked items */
+    }
+  
+    /* Adjust the width of the to-do list card to take full width */
+    .todolist {
+      width: 90%; /* Increase width to take more space */
+      margin-left: 5%; /* Center the card with equal margins */
+      height: auto; /* Make the height auto to accommodate content */
+    }
+  
+    /* Adjust the width of the profile card to take full width */
+    .profile-card {
+      width: 90%; /* Increase width to take more space */
+      height: auto; /* Make the height auto to accommodate content */
+    }
+  
+    /* Adjust the cards container to stack cards vertically */
+    #cards {
+      flex-direction: column;
+      height: auto; /* Make the height auto to accommodate stacked cards */
+    }
+  
+    /* Adjust individual card width and height */
+    .card {
+      width: 90%; /* Increase width to take more space */
+      height: auto; /* Make the height auto to accommodate content */
+      margin-bottom: 20px; /* Add bottom margin for spacing between cards */
+    }
+    @media (max-width: 768px) {
+        /* Adjust button styling within the user-info section for smaller screens */
+        .user-info button {
+          padding: 8px; /* Smaller padding */
+          font-size: 13px; /* Smaller font size */
+        }
+      }
+    }
+      
+      @media (max-width: 480px) {
+        /* Further adjust button styling for mobile screens */
+        .user-info button {
+          padding: 6px; /* Even smaller padding */
+          font-size: 11px; /* Even smaller font size */
+        }
+      }
+    

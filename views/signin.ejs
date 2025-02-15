@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/stylesheets/rstyle.css">
+    <title>CodaQuest </title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form method="post" action="/signin">
+                <h1>Create Account</h1>
+                <!-- <span>Use your user for registeration</span> -->
+                <input type="text" placeholder="Name" name="name">
+                <input type="email" placeholder="Email" name="email">
+                <input type="password" placeholder="Password" name="password">
+                <input type="password" placeholder="Confirm Password" name="cpassword">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form method="post" action="/signin">
+                <h1>Sign In</h1>
+
+                <span>Enter your Username</span>
+                <input type="text" placeholder="Enter Your Username" name="name">
+                <input type="password" placeholder="Password" name="password">
+                <a href="#">Forget Your Password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Start Your New Journey!</h1>
+                    <p>Already have an account?</p>
+                    <button class="hidden" id="login"><a href="/signin">Sign In</a></button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Welcome Back!</h1>
+                    <p>Don’t have an account?</p>
+                    <button class="hidden" id="register"><a href="/signup">Sign Up</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/register/rscript.js"></script>
+</body>
+
+</html>
